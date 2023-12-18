@@ -1,15 +1,96 @@
 /* font-family: 'Dela Gothic One', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+@font-face {
+    font-family: "BDO Grotesk Variable";
+    src: url("../public/fonts/BDO_grotesk_variable.woff2");
+
+}
+
+@font-face {
+    font-family: "ALT Riviera";
+    src: url("../public/fonts/ALTRivieraVF.woff2");
+}
+
 
 h1 {
-    font-family: 'DotGothic16', sans-serif;
+    font-family: 'BDO Grotesk Variable', sans-serif;
     text-transform: uppercase;
-    font-size: 10rem;
-    color: white;
+    font-size: 14vw;
     mix-blend-mode: difference;
+    color: white;
+    animation: fontVariationAndTransformAnimation 10s infinite;
+    display: flex;
 }
+
+.span {
+    display: inline-block;
+}
+
+.three-container {
+    height: 100%;
+    width: 100vw;
+}
+
+/*span animations */
+
+@keyframes animationOne {
+
+    0%,
+    100% {
+        font-variation-settings: 'wdth' 100, 'wght' 100;
+    }
+
+    50% {
+        font-variation-settings: 'wdth' 150, 'wght' 600;
+    }
+}
+
+@keyframes animationTwo {
+
+    0%,
+    100% {
+        font-variation-settings: 'wdth' 120, 'wght' 200;
+    }
+
+    50% {
+        font-variation-settings: 'wdth' 180, 'wght' 700;
+    }
+}
+
+@keyframes animationThree {
+
+    0%,
+    100% {
+        font-variation-settings: 'wdth' 140, 'wght' 300;
+    }
+
+    50% {
+        font-variation-settings: 'wdth' 200, 'wght' 800;
+    }
+}
+
+.span-one {
+    animation: animationOne 10s infinite alternate;
+}
+
+.span-two {
+    animation: animationTwo 12s infinite alternate;
+}
+
+.span-three {
+    animation: animationThree 14s infinite alternate;
+}
+
 
 body {
     background-color: yellow;
+}
+
+.logo {
+    position: absolute;
+    height: calc(2rem + 4vw);
+    width: calc(2rem + 4vw);
+    top: 85vh;
+
 }
