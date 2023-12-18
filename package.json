@@ -18,5 +18,9 @@
   "homepage": "https://github.com/heckspoiler/stream_website#readme",
   "dependencies": {
     "three": "^0.159.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
   }
 }

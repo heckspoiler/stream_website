@@ -17,8 +17,8 @@ h1 {
     font-family: 'BDO Grotesk Variable', sans-serif;
     text-transform: uppercase;
     font-size: 14vw;
-    mix-blend-mode: difference;
-    color: white;
+    /* mix-blend-mode: difference; */
+    color: black;
     animation: fontVariationAndTransformAnimation 10s infinite;
     display: flex;
 }
@@ -83,9 +83,7 @@ h1 {
 }
 
 
-body {
-    background-color: yellow;
-}
+body {}
 
 .logo {
     position: absolute;
